@@ -1,0 +1,36 @@
+uuid: 0d8bc270-0025-43e5-b8f9-630090b24998
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.archive.body
+    - field.field.node.archive.field_author
+    - field.field.node.archive.field_date
+    - field.field.node.archive.field_publication
+    - node.type.archive
+  module:
+    - text
+    - user
+id: node.archive.teaser
+targetEntityType: node
+bundle: archive
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_author: true
+  field_date: true
+  field_publication: true

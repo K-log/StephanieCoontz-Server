@@ -1,0 +1,146 @@
+##############
+# Custom Rules
+#
+# Place all new rules here that have not been copied from another source
+# (i.e. standard Drupal, Apple, or Windows files below) or included with
+# the default .gitignore rules.
+##
+.sass-cache
+.sass-cache/*
+*.css.map
+
+# Node modules can be installed after cloning
+node_modules
+
+# Sasslint report
+**/css/config/report.html
+
+modules/contrib
+
+###########################################################################
+
+# This file contains default .gitignore rules. To use it, copy it to .gitignore,
+# and it will cause files like your settings.php and user-uploaded files to be
+# excluded from Git version control. This is a common strategy to avoid
+# accidentally including private information in public repositories and patch
+# files.
+#
+# Because .gitignore can be specific to your site, this file has a different
+# name; updating Drupal core will not override your custom .gitignore file.
+
+# Ignore core when managing all of a project's dependencies with Composer
+# including Drupal core.
+# core
+
+# Ignore dependencies that are managed with Composer.
+# Generally you should only ignore the root vendor directory. It's important
+# that core/assets/vendor and any other vendor directories within contrib or
+# custom module, theme, etc., are not ignored unless you purposely do so.
+/vendor/
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest
+
+# If you prefer to store your .gitignore file in the sites/ folder, comment
+# or delete the previous settings and uncomment the following ones, instead.
+
+# Ignore configuration files that may contain sensitive information.
+# */settings*.php
+
+# Ignore paths that contain user-generated content.
+# */files
+# */private
+
+# Ignore SimpleTest multi-site environment.
+# simpletest
+
+##################
+# Additional Rules
+##
+
+#####################
+# Ignore Drupal files
+#
+# Rules from https://github.com/github/gitignore/blob/master/Drupal.gitignore
+##
+
+# Leaving this empty for Elaine to figure out. See the link above for the
+# list of recommended rules.
+
+####################
+# Ignore MacOS files
+#
+# Rules from https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+##
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+######################
+# Ignore Windows files
+#
+/modules/contrib
+##
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Xterm color settings?
+*.ti
+
+# database files, because they end up being so huge
+*.sql

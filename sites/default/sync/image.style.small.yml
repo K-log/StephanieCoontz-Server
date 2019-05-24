@@ -1,0 +1,14 @@
+uuid: 1950c337-2006-4764-98c2-fc2f164a157d
+langcode: en
+status: true
+dependencies: {  }
+name: small
+label: small
+effects:
+  1621acf6-167a-4ae8-b0a0-6e8a2da52e45:
+    uuid: 1621acf6-167a-4ae8-b0a0-6e8a2da52e45
+    id: image_resize
+    weight: 1
+    data:
+      width: 50
+      height: 50

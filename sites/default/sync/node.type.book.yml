@@ -1,0 +1,18 @@
+uuid: f2bcd14b-5006-4401-8b48-4cf3eb45d83f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:55db2399-1ea2-4e3f-b6b3-6040fdf99ed5'
+name: Book
+type: book
+description: 'Use <em>books</em> to display published books by Stephanie Coontz.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

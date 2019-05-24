@@ -1,0 +1,22 @@
+uuid: 40ea70f6-93f6-494a-9fc9-4eb34f569885
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stephanie
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: stephanie_messages
+theme: stephanie
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 41af3046-944e-4489-b214-749665ef42f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.archive
+  module:
+    - text
+id: node.archive.body
+field_name: body
+entity_type: node
+bundle: archive
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

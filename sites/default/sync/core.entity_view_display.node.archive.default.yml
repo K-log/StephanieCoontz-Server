@@ -1,0 +1,57 @@
+uuid: 925b5e4c-6d9c-4482-8481-979292dff9a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.archive.body
+    - field.field.node.archive.field_author
+    - field.field.node.archive.field_date
+    - field.field.node.archive.field_publication
+    - node.type.archive
+  module:
+    - datetime
+    - text
+    - user
+id: node.archive.default
+targetEntityType: node
+bundle: archive
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 103
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_publication:
+    weight: 104
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

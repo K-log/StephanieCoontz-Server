@@ -1,0 +1,20 @@
+uuid: 9df38185-a322-45d2-a65f-018bbeb8e325
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stephanie
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: stephanie_local_actions
+theme: stephanie
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

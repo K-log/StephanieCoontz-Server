@@ -1,0 +1,8 @@
+uuid: 56a292f4-e9b8-4153-9492-074b980aea59
+langcode: en
+status: true
+dependencies: {  }
+id: sc_articles
+label: 'SC Articles'
+locked: false
+pattern: 'F t, Y'
